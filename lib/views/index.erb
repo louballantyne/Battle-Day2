@@ -5,4 +5,12 @@
   </style>
 </head>
 <h1> My name is: <%=@funny_name%> </h1>
+
 <img src='https://i.postimg.cc/3Jb42kwR/156842388-10158374868291608-5566801498643269266-o.jpg'>
+<%if !@funny_name%>
+<form action="/named-parrot">
+  <input type="text" name="name">
+  <input type="submit" name="submit">
+
+</form>
+<%end%>
