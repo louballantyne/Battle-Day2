@@ -27,8 +27,12 @@ get '/random-parrot' do
   erb(:index)
 end
 
-get '/named-parrot' do
+post '/named-parrot' do
   p params
   @funny_name = params[:name]
   erb(:index)
+end
+
+get '/parrot' do
+  erb(:parrot)
 end
